@@ -1,1 +1,36 @@
 
+
+
+body, html {
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    color: #777;
+    font-weight: 400;
+    width: auto;
+    height: 100% !important;
+}
+
+
+/* Footer Section */
+#footer {
+    background: #ffffff;
+    padding: 30px;
+}
+
+    #footer p {
+        color: #777;
+        font-size: 14px;
+    }
+
+    #footer a {
+        color: aqua;
+    }
+
+        #footer a:hover {
+            color: aquamarine;
+        }
+
+        #footer a:hover {
+            border-bottom: 2px solid #ff0000;
+        }
