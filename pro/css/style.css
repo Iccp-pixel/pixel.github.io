@@ -1,7 +1,7 @@
 
 
 body{
-  background: #ffffff;
+  background: #FFFFFF;
 }
 .word {
   position: absolute;
@@ -62,7 +62,7 @@ body{
 .glitch .flash span:before,
 .glitch .flash span:after {
   display: block;
-  content: '坏掉了';
+  content: '小空格';
   position: absolute;
   top: 0;
   color: #fff;
