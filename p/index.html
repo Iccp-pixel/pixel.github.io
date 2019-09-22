@@ -1,78 +1,55 @@
 <!DOCTYPE html>
-
 <html lang="en">
+	<head>
+		<link rel="shortcut icon" href="pictrue.ico" type="image/x-icon">
+		<meta charset="UTF-8">
+		<title>your 樣</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript">// 定时器
+			window.onload = function() {
+				var count = document.getElementById("count");
+				var num = 1;
+				var timer = setInterval(function() {
+					count.innerHTML = num++;
+					if (num == 3) {
+						clearInterval(timer);
 
-  <head>
-	
-	<link rel="shortcut icon" href="pictrue.ico" type="image/x-icon">
+						var say = confirm("欢迎来到小空格个人主页，你可以使用这里的一切资源（因使用这些资源所造成的一切后果均由使用者承担）。");
+						if (say == true) {
+							// Press sure
+							alert("玩的开心！");
+						} else {
+							// Press other key
+							alert("欢迎下次再来！");
+						}
 
-    <meta charset="UTF-8">
-    <title> your 樣 </title>
-    <link rel="stylesheet" href="css/style.css">
-	  
-	  
-	  <script type="text/javascript">
-		  function tips()
-		  {
-			  var say=confirm("欢迎来到小空格个人主页，你可以使用这里的一切资源（因使用这些资源所造成的一切后果均由使用者承担）。");
-			  if(say==true)
-			  {
-				  // Press sure
-				  alert("玩的开心！");
-			  }
-			  else
-			  {
-				  // Press other key
-				  alert("欢迎下次再来！");
-			  }
-			  
-		  }
-		  
-		  // 延时启动
-		  var num_time = 1;
-		  var timer = setTimeout(function () {
-			  console.log(num_time++);
-		  window.onload=tips;
-			  
-		  },3000);
-		  
-	  </script>
+					}
 
-
-  </head>
-
-
-  <body>
-
-    <nav>
-
-	  <div class="menu-btn">
-		<div class="line line-1"></div>
-		<div class="line line-2"></div>
-		<div class="line line-3"></div>
-	  </div>
-
-	  <div class="nav-links">
-		<a target="_blank" href="http://www.baidu.com" class="link">Home</a>
-		<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=ilo5eHbJilyShVrJvpHVo5Z83kygTywk" class="link">Contact</a>
-		<a target="_blank" href="../CloudData/DATA" class="link">Database</a>
-		<a target="_blank" href="../pro/" class="link">About</a>
-	  </div>
-
-    </nav>
-
-
-    <!-- 告知  形式 -->
-    <div class="inform">
-	  小空格个人主页
-    </div>
-
-
-
-    <script src="js/index.js"></script>
-
-
-  </body>
-
+				},
+				1000);
+			}</script>
+	</head>
+	<body>
+		<nav>
+			<div class="menu-btn">
+				<div class="line line-1"></div>
+				<div class="line line-2"></div>
+				<div class="line line-3"></div>
+			</div>
+			<div class="nav-links">
+				<a target="_blank" href="http://www.baidu.com" class="link">Home</a>
+				<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=ilo5eHbJilyShVrJvpHVo5Z83kygTywk" class="link">Contact</a>
+				<a target="_blank" href="../CloudData/DATA" class="link">Database</a>
+				<a target="_blank" href="../pro/" class="link">About</a></div>
+		</nav>
+		<!-- 告知 形式 -->
+		<div class="inform">小空格个人主页</div>
+		<script src="js/index.js"></script>
+	</body>
 
 </html>
+
+
+
+
+
