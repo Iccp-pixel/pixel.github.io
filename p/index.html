@@ -5,27 +5,24 @@
 		<meta charset="UTF-8">
 		<title>your 樣</title>
 		<link rel="stylesheet" href="css/style.css">
-		<script type="text/javascript">// 定时器
-			window.onload = function() {
-				var count = document.getElementById("count");
-				var num = 1;
-				var timer = setInterval(function() {
-					count.innerHTML = num++;
-					if (num == 3) {
+		<script type="text/javascript">
+			
+			// 定时启动 tips() 函数
+			setTimeout("tips", 3000);
 
-						var say = confirm("欢迎来到小空格个人主页，你可以使用这里的一切资源（因使用这些资源所造成的一切后果均由使用者承担）。");
-						if (say == true) {
-							// Press sure
-							alert("玩的开心！");
-						} else {
-							// Press other key
-							alert("欢迎下次再来！");
-						}
+			function tips() {
 
+				if (num == 3) {
+					var say = confirm("欢迎来到小空格个人主页，你可以使用这里的一切资源（因使用这些资源所造成的一切后果均由使用者承担）。");
+					if (say == true) {
+						// Press sure
+						alert("玩的开心！");
+					} else {
+						// Press other key
+						alert("欢迎下次再来！");
 					}
+				}
 
-				},
-				1000);
 			}</script>
 	</head>
 	<body>
@@ -47,8 +44,3 @@
 	</body>
 
 </html>
-
-
-
-
-
