@@ -9,6 +9,27 @@
     <meta charset="UTF-8">
     <title>小空格在线</title>
     <link rel="stylesheet" href="css/style.css">
+	  
+	  
+	  <script type="text/javascript">
+		  function tips()
+		  {
+			  var say=confirm("欢迎来到小空格个人主页，你可以使用这里的一切资源（因使用这些资源所造成的一切后果均由使用者承担）。");
+			  if(say==true)
+			  {
+				  // Press sure
+				  alert("玩的开心！");
+			  }
+			  else
+			  {
+				  // Press other key
+				  window.opener=null;
+				  window.open('','_self');
+				  window.close();
+			  }
+			  
+		  }
+	  </script>
 
 
   </head>
